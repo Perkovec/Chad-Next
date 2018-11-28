@@ -1,9 +1,3 @@
-const actions = {
-  incrementAsync ({ commit }) {
-    setTimeout(() => {
-      commit('INCREMENT')
-    }, 200)
-  }
-}
+const actions = {};
 
-export default actions
+export default actions;

@@ -1,42 +1,63 @@
 <template>
-    <div class='text-editor'>
-        <div class='row text-input'>
-            <div class='text-controls row'>
-                <at-button icon='icon-link'>Link</at-button>
-                <at-button icon='icon-bold'>Bold</at-button>
-                <at-button icon='icon-italic'>Italic</at-button>
-            </div>
-            <at-textarea v-model='text' resize='none' placeholder='Post text'></at-textarea>
-        </div>
-        <div class='row'>
-            <text-preview v-bind:input-text='text'></text-preview>
-        </div>
-        <div class='row post-controls'>
-            <at-button icon='icon-settings'>Settings</at-button>
-            <at-button icon='icon-save'>Save draft</at-button>
-            <at-button icon='icon-upload-cloud' type="primary">Send</at-button>
-        </div>
+  <div class="text-editor">
+    <div class="row text-input">
+      <div class="text-controls row">
+        <AtButton icon="icon-link">
+          Link
+        </AtButton>
+        <AtButton icon="icon-bold">
+          Bold
+        </AtButton>
+        <AtButton icon="icon-italic">
+          Italic
+        </AtButton>
+      </div>
+      <AtTextarea
+        v-model="text"
+        resize="none"
+        placeholder="Post text"
+      />
     </div>
+    <div class="row">
+      <TextPreview
+        :input-text="text"
+      />
+    </div>
+    <div class="row post-controls">
+      <AtButton icon="icon-settings">
+        Settings
+      </AtButton>
+      <AtButton icon="icon-save">
+        Save draft
+      </AtButton>
+      <AtButton
+        icon="icon-upload-cloud"
+        type="primary"
+      >
+        Send
+      </AtButton>
+    </div>
+  </div>
 </template>
 
 <script>
-import TextPreview from './TextPreview'
+import TextPreview from './TextPreview';
 
 export default {
-    computed: {
-        text: {
-            get () {
-                return this.$store.state.WritePost.text
-            },
-            set (value) {
-                this.$store.commit('SET_WRITEPOST_TEXT', value)
-            }
-        }
+  components: {
+    TextPreview,
+  },
+  computed: {
+    text: {
+      get() {
+        return this.$store.state.WritePost.text;
+      },
+      set(value) {
+        this.$store.commit('SET_WRITEPOST_TEXT', value);
+      },
     },
-    components: {
-        TextPreview
-    }
-}
+  },
+};
 </script>
 
 <style lang="scss">

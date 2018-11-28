@@ -2,23 +2,23 @@
   <div id="app">
     <div class="row">
       <div class="col-6">
-        <sidebar-menu></sidebar-menu>
+        <SidebarMenu />
       </div>
       <div class="col-18">
-        <router-view></router-view>
+        <RouterView />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import SidebarMenu from 'components/SidebarMenu'
+import SidebarMenu from 'components/SidebarMenu';
 
 export default {
   components: {
-    SidebarMenu
-  }
-}
+    SidebarMenu,
+  },
+};
 </script>
 
 <style lang="scss">

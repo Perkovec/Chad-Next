@@ -1,17 +1,17 @@
 <template>
-  <div class='page-writepost'>
-    <TextEditor/>
+  <div class="page-writepost">
+    <TextEditor />
   </div>
 </template>
 
 <script>
-import TextEditor from 'components/TextEditor'
+import TextEditor from 'components/TextEditor';
 
 export default {
   components: {
-    TextEditor
-  }
-}
+    TextEditor,
+  },
+};
 </script>
 
 <style>

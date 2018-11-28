@@ -1,7 +1,7 @@
 const WritePost = {
-  text: ''
-}
+  text: '',
+};
 
 export default {
-  WritePost
-}
+  WritePost,
+};

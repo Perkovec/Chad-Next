@@ -1,17 +1,35 @@
 <template>
-  <at-menu theme="dark" mode="vertical" active-name="0" >
-    <at-menu-item name="0"><i class="icon icon-edit"></i>Write post</at-menu-item>
-    <at-menu-item name="1"><i class="icon icon-message-square"></i>Posts</at-menu-item>
-    <at-menu-item name="2"><i class="icon icon-trash"></i>Drafts</at-menu-item>
-    <at-menu-item name="3"><i class="icon icon-settings"></i>Preferences</at-menu-item>
-    <at-menu-item name="4"><i class="icon icon-info"></i>About Chad<sup>Next</sup></at-menu-item>
-  </at-menu>
+  <AtMenu
+    theme="dark"
+    mode="vertical"
+    active-name="0"
+  >
+    <AtMenuItem name="0">
+      <i class="icon icon-edit" />
+      Write post
+    </AtMenuItem>
+    <AtMenuItem name="1">
+      <i class="icon icon-message-square" />
+      Posts
+    </AtMenuItem>
+    <AtMenuItem name="2">
+      <i class="icon icon-trash" />
+      Drafts
+    </AtMenuItem>
+    <AtMenuItem name="3">
+      <i class="icon icon-settings" />
+      Preferences
+    </AtMenuItem>
+    <AtMenuItem name="4">
+      <i class="icon icon-info" />
+      About Chad
+      <sup>Next</sup>
+    </AtMenuItem>
+  </AtMenu>
 </template>
 
 <script>
-export default {
-  
-}
+export default {};
 </script>
 
 <style>
