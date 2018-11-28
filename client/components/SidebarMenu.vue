@@ -17,6 +17,6 @@ export default {
 <style>
   .at-menu {
     height: 100%;
-    width: auto;
+    width: auto !important;
   }
 </style>

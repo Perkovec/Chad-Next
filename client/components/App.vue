@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="row at-row">
+    <div class="row">
       <div class="col-6">
         <sidebar-menu></sidebar-menu>
       </div>
@@ -21,7 +21,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 body {
   margin: 0;
   overflow: hidden;
@@ -31,7 +31,8 @@ body {
 #app {
   width: 100%;
   height: 100%;
-  .row {
+
+  & > .row {
     height: 100%;
   }
 }
