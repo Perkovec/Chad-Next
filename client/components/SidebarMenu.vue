@@ -39,16 +39,23 @@
         Add channel
       </AtMenuItem>
     </AtSubmenu>
+    <BotProfile/>
   </AtMenu>
 </template>
 
 <script>
-export default {};
+import BotProfile from 'components/BotProfile';
+
+export default {
+  components: {
+    BotProfile,
+  },
+};
 </script>
 
-<style>
+<style lang="scss" scope>
   .at-menu {
     height: 100%;
-    width: auto !important;
+    max-width: 210px;
   }
 </style>

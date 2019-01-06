@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <div class="row">
-      <div class="col-6">
+      <div>
         <SidebarMenu />
       </div>
-      <div class="col-18">
+      <div class="col content-column">
         <RouterView />
       </div>
     </div>
@@ -21,7 +21,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 body {
   margin: 0;
   overflow: hidden;
@@ -34,6 +34,11 @@ body {
 
   & > .row {
     height: 100%;
+  }
+
+  .content-column {
+    flex: 1;
+    min-width: 360px;
   }
 }
 </style>
